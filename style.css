@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f2f0;
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+nav {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.border {
+  width: 300px;
+  border-bottom: 2px solid;
+  border-radius: 5px;
+}
+nav ul li {
+  font-size: 18px;
+  padding-left: 64px;
+  cursor: pointer;
+}
+.brandImage img {
+  height: 40px;
+}
+.mainBody {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.mainBody .imageBox {
+  width: 30%;
+}
+.mainBody .contentBox {
+  width: 70%;
+  padding: 80px 0 0 0;
+}
+.topBox,
+.bottomBox {
+  padding: 0 80px;
+}
+.mainBody .imageBox img {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.creativeLeftBox h2 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.topText {
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: black;
+}
+.creativityBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.createiveRightBox ul {
+  list-style-type: none;
+}
+.createiveRightBox ul li {
+  padding: 15px 0;
+}
+.createiveRightBox ul li .fab,
+.createiveRightBox ul li .fas {
+  font-size: 28px;
+  color: #333333;
+}
+.creativeLeftBox div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.creativeLeftBox {
+  width: 100%;
+}
+.creativeLeftBox div p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding-left: 32px;
+  color: #949393;
+  padding-top: 20px;
+}
+.halftext {
+  color: #333333;
+}
+
+.buttonBox {
+  width: 100%;
+  text-align: right;
+}
+.buttonBox button {
+  margin-top: 24px;
+  padding: 16px 56px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #333333;
+  border: none;
+  outline: none;
+}
+.bottomBox {
+  display: flex;
+  padding-top: 20px;
+}
+.bottomBox ul {
+  width: 30%;
+}
+.content img {
+  height: 250px;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+.content h1 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 72px;
+  line-height: 0.3;
+  padding-top: 20px;
+}
+.arrow {
+  width: 10%;
+  height: 100%;
+  align-self: center;
+}
+.content p {
+  padding: 10px 0 20px 0;
+  width: 80%;
+}
+.bottomBox ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.bottomBox ul li {
+  padding: 20px 0 20px 30px;
+  position: relative;
+  color: #828282;
+}
+.bottomBox ul li:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: #828282;
+  border-radius: 50%;
+  z-index: 99;
+}
+.bottomBox ul li.active {
+  color: #333333;
+}
+.bottomBox ul li.active:before {
+  height: 15px;
+  width: 15px;
+  background-color: #333333;
+}
+.bottomBox ul li:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5px;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #828282;
+  z-index: 9;
+}
+.fa-arrow-down {
+  /* height: 20px !important; */
+}
